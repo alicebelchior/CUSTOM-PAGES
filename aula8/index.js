@@ -17,6 +17,8 @@ const servidor = http.createServer((req, res) => {
   } else {
     res.write("<h1>PADRÃO</h1>");
   }
+
+  res.end();
 });
 
 servidor.listen(porta, () => {

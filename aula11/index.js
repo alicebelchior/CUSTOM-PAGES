@@ -7,7 +7,7 @@ const servidor = http.createServer((req, res) =>{
     if (req.url != "enviodearquivo"){
         //criação de form para envio de arquivo
         res.writeHead(200, {"Content-Type":"text/html"});
-        res.write('<form action = "enviodearquivo" method = "post" enctype = "multipart/form-data');
+        res.write('<form action = "enviodearquivo" method = "post" enctype = "multipart/form-data">');
         res.write('<input type = "file" name = "filetoupload"><br>');
         res.write('<input type = "submit" value = "Enviar">');
         res.write('</form>');
